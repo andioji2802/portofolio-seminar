@@ -1,0 +1,7 @@
+{
+  "name": "E-Portofolio Seminar PPG Informatika",
+  "description": "Website E-Portofolio Seminar PPG Calon Guru Informatika - Andi Khozin Mubarak (Universitas Islam Makassar / SMK Telkom Makassar)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

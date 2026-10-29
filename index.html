@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portofolio Seminar PPG Informatika | Andi Khozin Mubarak</title>
+  <meta name="description" content="Website E-Portofolio Seminar PPG Calon Guru Informatika - Andi Khozin Mubarak (Universitas Islam Makassar / SMK Telkom Makassar)">
+  
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:title" content="E-Portofolio Seminar PPG Informatika | Andi Khozin Mubarak">
+  <meta property="og:description" content="Website E-Portofolio Seminar PPG Calon Guru Informatika - Andi Khozin Mubarak (Universitas Islam Makassar / SMK Telkom Makassar)">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Murni -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== TOP NAVBAR ==================== -->
+  <header class="navbar" id="top-navbar">
+    <div class="container nav-container">
+      <a href="#beranda" class="nav-brand" aria-label="E-Portofolio Seminar PPG Informatika">
+        <div class="brand-emblem" aria-hidden="true">
+          <!-- Logo PPG Monogram SVG -->
+          <svg viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="8" fill="#B91C1C"/>
+            <!-- Graduation Cap -->
+            <path d="M18 8L6 14L18 20L30 14L18 8Z" fill="#FFFFFF"/>
+            <path d="M10 16.5V23C10 26 26 26 26 23V16.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="30" cy="18" r="2" fill="#22C55E"/>
+            <!-- Tech / Code bracket -->
+            <path d="M14 26L11 29L14 32" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 26L25 29L22 32" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">PORTOFOLIO SEMINAR PPG</span>
+          <span class="brand-subtitle">PPG Calon Guru Informatika • UIM</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navigasi Utama">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#profil" class="nav-link">Profil Mahasiswa</a>
+        <a href="#semester1" class="nav-link">Refleksi Smt 1</a>
+        <a href="#semester2" class="nav-link">Refleksi Smt 2</a>
+        <a href="#refleksi-ppg" class="nav-link">Refleksi Selama PPG</a>
+
+        <!-- Dropdown Menu "Lainnya" -->
+        <div class="nav-item nav-dropdown">
+          <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Lainnya
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#inovasi" class="dropdown-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Karya Inovasi Pendidikan
+            </a>
+            <a href="#arsip" class="dropdown-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Arsip Dokumen Terpusat
+            </a>
+            <button type="button" class="dropdown-link open-guide-trigger" style="width: 100%; border: none; background: none; text-align: left; cursor: pointer;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Panduan Pemilik Portofolio
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Search & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#arsip" class="nav-btn-search" aria-label="Cari Dokumen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Cari Dokumen</span>
+        </a>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (#beranda) ==================== -->
+  <section class="hero-section" id="beranda">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-icon"></span>
+            <span>SEMINAR HASIL PPG CALON GURU 2025/2026</span>
+          </div>
+
+          <h1 class="hero-title">
+            E-Portofolio Seminar <span>PPG Guru Informatika</span>
+          </h1>
+
+          <div class="hero-tagline">
+            “Perjalanan Belajar, Refleksi, dan Inovasi Menuju Guru Profesional.”
+          </div>
+
+          <p class="hero-intro">
+            Platform repositori digital resmi untuk mendokumentasikan, mengelompokkan, dan mempublikasikan seluruh Lembar Kerja (LK 2), refleksi pembelajaran komprehensif (LK 3), perangkat ajar, dan karya inovasi pendidikan selama menempuh Program Pendidikan Profesi Guru Calon Guru Informatika di Universitas Islam Makassar (UIM) bermitra dengan SMK Telkom Makassar.
+          </p>
+
+          <div class="hero-meta-badges">
+            <div class="meta-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span><strong>Andi Khozin Mubarak</strong></span>
+            </div>
+            <div class="meta-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>NIM: <strong>25086085004</strong></span>
+            </div>
+            <div class="meta-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Universitas Islam Makassar</span>
+            </div>
+            <div class="meta-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>PPL: SMK Telkom Makassar</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#arsip" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Lihat Arsip Lengkap PDF
+            </a>
+            <a href="#profil" class="btn btn-green">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Profil Mahasiswa
+            </a>
+            <a href="assets/e-portofolio-ppg.zip" download="e-portofolio-ppg.zip" class="btn btn-outline" style="border-color: var(--primary-green); color: var(--dark-green);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Unduh Paket ZIP Proyek
+            </a>
+            <button type="button" class="btn btn-outline open-guide-trigger">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              Petunjuk Penggunaan
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Hero Side Profile Box -->
+        <div class="hero-card-side">
+          <div class="hero-profile-summary">
+            <div class="hero-avatar-box">
+              <img src="assets/images/profile-placeholder.svg" alt="Foto Profil Andi Khozin Mubarak" width="130" height="130" loading="eager">
+            </div>
+            <h3 class="hero-name">Andi Khozin Mubarak</h3>
+            <div class="hero-nim">NIM: 25086085004</div>
+            <p class="hero-inst">
+              Calon Guru Informatika Profesional<br>
+              Universitas Islam Makassar (UIM)<br>
+              Sekolah Mitra PPL: SMK Telkom Makassar
+            </p>
+            <div class="hero-quick-stats">
+              <div class="stat-box">
+                <div class="stat-number">10</div>
+                <div class="stat-label">LK Smt 1</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">4</div>
+                <div class="stat-label">LK Smt 2</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Inovasi IT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6 KATEGORI UTAMA (BERBENTUK LINGKARAN BESAR) ==================== -->
+  <section class="category-grid-section" aria-labelledby="cat-section-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Navigasi Beranda Portofolio</span>
+        <h2 class="section-title" id="cat-section-heading">Kategori Utama E-Portofolio</h2>
+        <p class="section-desc">
+          Pilih salah satu menu di bawah ini untuk mengakses dokumen refleksi pembelajaran, lembar kerja mata kuliah, perangkat ajar inovatif, dan profil kelulusan PPG.
+        </p>
+      </div>
+
+      <div class="circle-cards-grid">
+        <!-- 1. Beranda / Pintasan Navigasi -->
+        <a href="#beranda" class="circle-cat-card" aria-label="Kategori Beranda">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <path d="M10 28L32 10L54 28V52C54 53.1 53.1 54 52 54H12C10.9 54 10 53.1 10 52V28Z" fill="#FEF2F2" stroke="#B91C1C" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M26 54V34H38V54" fill="#15803D" stroke="#15803D" stroke-width="2"/>
+              <circle cx="32" cy="22" r="4" fill="#B91C1C"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">1. Beranda</h3>
+          <p class="circle-card-desc">Halaman utama portofolio dengan ringkasan identitas dan akses cepat seluruh dokumen.</p>
+          <span class="circle-card-action">Buka Beranda &rarr;</span>
+        </a>
+
+        <!-- 2. Profil Mahasiswa -->
+        <a href="#profil" class="circle-cat-card" aria-label="Kategori Profil Mahasiswa">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Academic Laurel & Person -->
+              <circle cx="32" cy="24" r="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="3"/>
+              <path d="M16 50C16 41 23 37 32 37C41 37 48 41 48 50" stroke="#B91C1C" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10 32C10 44 20 54 32 54C44 54 54 44 54 32" stroke="#15803D" stroke-width="2.5" stroke-dasharray="4 3"/>
+              <polygon points="32,8 24,14 40,14" fill="#15803D"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">2. Profil Mahasiswa</h3>
+          <p class="circle-card-desc">Biodata lengkap, 4 pilar kompetensi guru profesional, dan visi pendidik Informatika di era digital.</p>
+          <span class="circle-card-action">Lihat Profil &rarr;</span>
+        </a>
+
+        <!-- 3. Refleksi MK Semester 1 -->
+        <a href="#semester1" class="circle-cat-card" aria-label="Kategori Refleksi Mata Kuliah Semester 1">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Open Book & Code Symbol -->
+              <path d="M12 46C18 43 26 43 32 46C38 43 46 43 52 46V18C46 15 38 15 32 18C26 15 18 15 12 18V46Z" fill="#FEF2F2" stroke="#B91C1C" stroke-width="3" stroke-linejoin="round"/>
+              <line x1="32" y1="18" x2="32" y2="46" stroke="#B91C1C" stroke-width="2"/>
+              <path d="M20 28L16 32L20 36" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 28L48 32L44 36" stroke="#15803D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">3. Refleksi MK Semester 1</h3>
+          <p class="circle-card-desc">10 Lembar Kerja (LK 2) filosofi pendidikan, asesmen SMK, PPL terbimbing, dan growth mindset.</p>
+          <span class="circle-card-action">10 Dokumen LK &rarr;</span>
+        </a>
+
+        <!-- 4. Refleksi MK Semester 2 -->
+        <a href="#semester2" class="circle-cat-card" aria-label="Kategori Refleksi Mata Kuliah Semester 2">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Growing Plant / Tree & Certificate -->
+              <path d="M32 52V30" stroke="#15803D" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M32 36C24 36 20 28 22 22C28 22 32 28 32 36Z" fill="#22C55E" stroke="#15803D" stroke-width="2"/>
+              <path d="M32 30C40 30 44 22 42 16C36 16 32 22 32 30Z" fill="#22C55E" stroke="#15803D" stroke-width="2"/>
+              <rect x="14" y="46" width="36" height="8" rx="4" fill="#B91C1C"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">4. Refleksi MK Semester 2</h3>
+          <p class="circle-card-desc">Refleksi PPL mandiri, asesmen lanjut kejuruan, teaching factory, dan siklus pembelajaran mandiri.</p>
+          <span class="circle-card-action">Refleksi Lanjutan &rarr;</span>
+        </a>
+
+        <!-- 5. Refleksi Selama PPG -->
+        <a href="#refleksi-ppg" class="circle-cat-card" aria-label="Kategori Refleksi Selama PPG">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Graduation Cap & Comprehensive Star -->
+              <polygon points="32,12 12,22 32,32 52,22" fill="#FEF2F2" stroke="#B91C1C" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M20 26.5V36C20 42 44 42 44 36V26.5" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="52" cy="27" r="3" fill="#22C55E"/>
+              <polygon points="32,40 34,45 39,45 35,48 37,53 32,50 27,53 29,48 25,45 30,45" fill="#15803D"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">5. Refleksi Selama PPG</h3>
+          <p class="circle-card-desc">LK 3 komprehensif, evaluasi perkembangan kompetensi, tantangan, dan rencana tindak lanjut guru.</p>
+          <span class="circle-card-action">LK 3 Komprehensif &rarr;</span>
+        </a>
+
+        <!-- 6. Karya Inovasi Pendidikan -->
+        <a href="#inovasi" class="circle-cat-card" aria-label="Kategori Karya Inovasi Pendidikan">
+          <div class="circle-icon-wrapper" aria-hidden="true">
+            <svg class="cat-svg-icon" viewBox="0 0 64 64" fill="none">
+              <!-- Lightbulb & Innovation Tech Rays -->
+              <path d="M32 12C23 12 18 17 18 24C18 29 22 33 24 37H40C42 33 46 29 46 24C46 17 41 12 32 12Z" fill="#FEF2F2" stroke="#B91C1C" stroke-width="3"/>
+              <rect x="26" y="41" width="12" height="4" rx="1" fill="#15803D"/>
+              <rect x="28" y="47" width="8" height="3" rx="1" fill="#15803D"/>
+              <line x1="32" y1="4" x2="32" y2="8" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="12" y1="20" x2="8" y2="20" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+              <line x1="56" y1="20" x2="52" y2="20" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="circle-card-title">6. Karya Inovasi Pendidikan</h3>
+          <p class="circle-card-desc">Modul ajar PBL, media pembelajaran interaktif, LKPD diferensiasi, dan video pembelajaran IT.</p>
+          <span class="circle-card-action">Koleksi Inovasi &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN PROFIL MAHASISWA (#profil) ==================== -->
+  <section class="page-section profile-section" id="profil">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Identitas Akademik &amp; Kompetensi</span>
+        <h2 class="section-title">Profil Mahasiswa PPG</h2>
+        <p class="section-desc">
+          Mengenal profil calon guru Informatika, pengalaman praktik mengajar di sekolah mitra, dan komitmen profesional dalam memajukan pendidikan kejuruan teknologi di Indonesia.
+        </p>
+      </div>
+
+      <div class="profile-layout">
+        <!-- Kartu Identitas Kiri -->
+        <aside class="profile-card-left">
+          <div class="profile-img-container">
+            <img src="assets/images/profile-placeholder.svg" alt="Foto Resmi Mahasiswa Andi Khozin Mubarak" width="170" height="170" loading="lazy">
+          </div>
+          <h3 class="profile-full-name">Andi Khozin Mubarak</h3>
+          <div class="profile-nim-badge">NIM: 25086085004</div>
+
+          <div class="profile-details-list">
+            <div class="profile-item">
+              <div class="profile-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="profile-item-info">
+                <span class="profile-item-label">Program Studi</span>
+                <span class="profile-item-value">PPG Calon Guru Informatika</span>
+              </div>
+            </div>
+
+            <div class="profile-item">
+              <div class="profile-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+              </div>
+              <div class="profile-item-info">
+                <span class="profile-item-label">Perguruan Tinggi (LPTK)</span>
+                <span class="profile-item-value">Universitas Islam Makassar (UIM)</span>
+              </div>
+            </div>
+
+            <div class="profile-item">
+              <div class="profile-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="profile-item-info">
+                <span class="profile-item-label">Sekolah Mitra PPL</span>
+                <span class="profile-item-value">SMK Telkom Makassar</span>
+              </div>
+            </div>
+
+            <div class="profile-item">
+              <div class="profile-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="profile-item-info">
+                <span class="profile-item-label">Tahun Akademik</span>
+                <span class="profile-item-value">2025/2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-photo-tip">
+            <strong>Petunjuk Pemilik:</strong> Anda dapat mengganti gambar avatar ini kapan saja dengan meletakkan foto asli Anda pada berkas <code>assets/images/profile-placeholder.svg</code> atau mengubah ekstensi tautannya.
+          </div>
+        </aside>
+
+        <!-- Konten Penjelasan Kanan -->
+        <div class="profile-content-right">
+          <!-- Perjalanan Pendidikan & Praktik Mengajar -->
+          <article class="profile-block">
+            <h3 class="block-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              Perjalanan Pendidikan &amp; Pengalaman Praktik Lapangan
+            </h3>
+            <p style="margin-bottom: 14px; color: var(--text-secondary); line-height: 1.7;">
+              Sebagai mahasiswa Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi Informatika di Universitas Islam Makassar (UIM), saya menempuh proses penempaan akademik dan pedagogis intensif yang berlandaskan nilai-nilai moderasi Islam (Aswaja), etika profesi luhur, serta prinsip Merdeka Belajar.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              Melalui penugasan Praktik Pengalaman Lapangan (PPL) di <strong>SMK Telkom Makassar</strong>, saya mendalami dinamika pembelajaran vokasi teknologi informasi. Di bawah bimbingan Guru Pamong dan Dosen Pembimbing Lapangan, saya merancang dan mengimplementasikan pembelajaran berbasis proyek (Project-Based Learning), menerapkan pendekatan Teaching Factory, memfasilitasi kelas praktikum pemrograman komputer, serta mengintegrasikan pembelajaran berdiferensiasi yang merangkul keragaman bakat dan kesiapan belajar murid.
+            </p>
+
+            <!-- Visi Pendidik -->
+            <div class="vision-box">
+              <div style="font-size: 0.82rem; font-weight: 700; color: var(--primary-green); text-transform: uppercase; margin-bottom: 4px;">
+                Visi Guru Informatika Profesional
+              </div>
+              <div class="vision-quote">
+                “Menjadi guru Informatika profesional yang adaptif terhadap transformasi teknologi, inovatif dalam menciptakan pedagogi bermakna yang berpusat pada murid, serta berakar teguh pada keteladanan moral dan etika profesi pendidik.”
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 Pilar Kompetensi Guru -->
+          <article class="profile-block">
+            <h3 class="block-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              Penguatan 4 Pilar Kompetensi Guru
+            </h3>
+            <div class="competencies-grid">
+              <div class="comp-card">
+                <div class="comp-header">
+                  <div class="comp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                  </div>
+                  <h4 class="comp-name">1. Pedagogik</h4>
+                </div>
+                <p class="comp-desc">
+                  Mampu mendiagnosis kebutuhan belajar, merancang modul ajar Kurikulum Merdeka berbasis Understanding by Design (UbD), dan menerapkan pembelajaran berdiferensiasi serta asesmen otentik kejuruan.
+                </p>
+              </div>
+
+              <div class="comp-card">
+                <div class="comp-header">
+                  <div class="comp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  </div>
+                  <h4 class="comp-name">2. Profesional</h4>
+                </div>
+                <p class="comp-desc">
+                  Menguasai substansi keilmuan Informatika SMK meliputi pemrograman dasar, logika algoritma, rekayasa web, arsitektur jaringan komputer, literasi keamanan digital, dan etika kecerdasan buatan.
+                </p>
+              </div>
+
+              <div class="comp-card">
+                <div class="comp-header">
+                  <div class="comp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <h4 class="comp-name">3. Sosial</h4>
+                </div>
+                <p class="comp-desc">
+                  Membangun komunikasi empatik dan kolaboratif dengan peserta didik, rekan sejawat, dosen, guru pamong di SMK Telkom Makassar, orang tua murid, serta kemitraan industri dunia kerja (IDUKA).
+                </p>
+              </div>
+
+              <div class="comp-card">
+                <div class="comp-header">
+                  <div class="comp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <h4 class="comp-name">4. Kepribadian</h4>
+                </div>
+                <p class="comp-desc">
+                  Menjunjung tinggi keteladanan moral, kedewasaan emosi, sikap moderat (Aswaja), integritas profesional, dan semangat pembelajar sepanjang hayat (lifelong learner).
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REFLEKSI MATA KULIAH SEMESTER 1 (#semester1) ==================== -->
+  <section class="page-section" id="semester1">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Semester Ganjil</span>
+        <h2 class="section-title">Refleksi Mata Kuliah Semester 1</h2>
+        <p class="section-desc">
+          Dokumentasi sepuluh Lembar Kerja (LK 2) hasil telaah teori, diskusi reflektif, dan praktik awal pembelajaran yang diselesaikan selama perkuliahan semester pertama.
+        </p>
+      </div>
+
+      <!-- Container Kartu Dokumen Semester 1 (Dirender oleh JS) -->
+      <div class="doc-grid" id="semester1-cards-container">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REFLEKSI MATA KULIAH SEMESTER 2 (#semester2) ==================== -->
+  <section class="page-section section-alt" id="semester2">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Semester Genap</span>
+        <h2 class="section-title">Refleksi Mata Kuliah Semester 2</h2>
+        <p class="section-desc">
+          Kumpulan refleksi pengalaman praktik mengajar mandiri di SMK Telkom Makassar, penerapan asesmen lanjut kejuruan, dan evaluasi siklus pembelajaran berbasis data.
+        </p>
+      </div>
+
+      <!-- Container Kartu Dokumen Semester 2 (Dirender oleh JS) -->
+      <div class="doc-grid" id="semester2-cards-container">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REFLEKSI SELAMA PPG (#refleksi-ppg) ==================== -->
+  <section class="page-section" id="refleksi-ppg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Sintesis Pengalaman Belajar</span>
+        <h2 class="section-title">Refleksi Seluruh Perjalanan PPG</h2>
+        <p class="section-desc">
+          Refleksi komprehensif atas proses metamorfosis pemikiran, keterampilan pedagogis, dan jati diri sebagai pendidik profesional calon guru Informatika.
+        </p>
+      </div>
+
+      <!-- Featured Banner LK 3 -->
+      <div class="featured-lk3-banner">
+        <div class="lk3-info">
+          <span style="display: inline-block; padding: 4px 12px; background: rgba(34, 197, 94, 0.25); border: 1px solid var(--accent-green); border-radius: 9999px; font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; color: #FFFFFF;">
+            DOKUMEN KUNCI SEMINAR PPG
+          </span>
+          <h3>LK 3 Refleksi Pengalaman Belajar Selama Mengikuti PPG</h3>
+          <p>
+            Naskah refleksi menyeluruh yang mengintegrasikan pembelajaran teoritis LPTK UIM dengan realitas empiris di SMK Telkom Makassar, membuktikan kematangan profesional dan kesiapan menjadi agen transformasi pendidikan vokasi.
+          </p>
+        </div>
+        <div class="lk3-actions">
+          <button type="button" class="btn btn-green" onclick="openPdfModal('lk3-refleksi-ppg')" aria-label="Lihat naskah LK 3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            Lihat Naskah Lengkap LK 3
+          </button>
+          <a href="assets/documents/LK3_Refleksi_PPG_Andi_Khozin_Mubarak.pdf" download class="btn btn-outline" style="color: #FFFFFF; border-color: rgba(255,255,255,0.4);" aria-label="Unduh file LK 3 PDF">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Unduh Naskah PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 Poin Refleksi Mendalam (Accordion Interaktif) -->
+      <div class="reflection-accordion" id="ppg-accordion">
+        <!-- 1. Perkembangan Kompetensi -->
+        <div class="acc-item open">
+          <button type="button" class="acc-header" aria-expanded="true">
+            <div class="acc-title-group">
+              <span class="acc-step-badge">1</span>
+              <h3 class="acc-title">Perkembangan Kompetensi Calon Guru Informatika</h3>
+            </div>
+            <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="acc-content">
+            Sebelum mengikuti PPG, pemahaman saya terhadap pengajaran Informatika cenderung terfokus pada transfer pengetahuan teknis (coding syntax &amp; hardware). Melalui program PPG ini, terjadi lonjakan kompetensi signifikan: saya menguasai integrasi TPACK (Technological Pedagogical Content Knowledge), perancangan asesmen otentik berbasis kompetensi industri, serta kemampuan mengelola dinamika sosial-emosional di ruang laboratorium komputer agar setiap siswa merasa aman dan terdorong bereksplorasi.
+          </div>
+        </div>
+
+        <!-- 2. Perubahan Paradigma -->
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <div class="acc-title-group">
+              <span class="acc-step-badge">2</span>
+              <h3 class="acc-title">Perubahan Cara Pandang terhadap Pendidikan (Paradigma Baru)</h3>
+            </div>
+            <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="acc-content">
+            Filosofi Ki Hadjar Dewantara menyadarkan saya bahwa peran guru bukanlah membentuk murid seperti lilin kosong, melainkan menuntun benih kodrat yang telah ada pada diri mereka sesuai tuntutan kodrat alam dan kodrat zaman. Di era disrupsi kecerdasan buatan, guru Informatika bukan lagi satu-satunya sumber sintaks pemrograman, melainkan fasilitator yang mengasah nalar kritis, komputasional, kreativitas, dan integritas etis peserta didik.
+          </div>
+        </div>
+
+        <!-- 3. Pengalaman Bermakna -->
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <div class="acc-title-group">
+              <span class="acc-step-badge">3</span>
+              <h3 class="acc-title">Pengalaman Paling Bermakna Selama PPL di SMK Telkom Makassar</h3>
+            </div>
+            <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="acc-content">
+            Momen paling mengesankan terjadi saat mendampingi siswa yang semula frustrasi akibat error debugging berulang kali pada proyek aplikasi web sekolah. Dengan pendekatan scaffolding bergradasi dan penanaman pola pikir bertumbuh (growth mindset), siswa tersebut berhasil menyelesaikan logika program dan mempresentasikannya dengan bangga. Melihat pancaran rasa percaya diri siswa kejuruan menyadarkan saya akan kekuatan empati pedagogis seorang guru.
+          </div>
+        </div>
+
+        <!-- 4. Tantangan dan Strategi -->
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <div class="acc-title-group">
+              <span class="acc-step-badge">4</span>
+              <h3 class="acc-title">Tantangan Pedagogis dan Strategi Penyelesaian</h3>
+            </div>
+            <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="acc-content">
+            Tantangan terbesar adalah heterogenitas kemampuan awal siswa dalam penalaran logika dan ketersediaan sarana belajar mandiri di rumah. Strategi yang saya terapkan adalah pembelajaran berdiferensiasi konten dan proses: menyediakan lembar kerja dengan tiga tingkat kesulitan (Tiered Tasks), membentuk kelompok tutor sebaya kolaboratif, serta memanfaatkan simulator berbasis browser yang ringan diakses dari telepon genggam.
+          </div>
+        </div>
+
+        <!-- 5. Rencana Tindak Lanjut -->
+        <div class="acc-item">
+          <button type="button" class="acc-header" aria-expanded="false">
+            <div class="acc-title-group">
+              <span class="acc-step-badge">5</span>
+              <h3 class="acc-title">Rencana Tindak Lanjut (RTL) Menjadi Guru Profesional Berkelanjutan</h3>
+            </div>
+            <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="acc-content">
+            Pasca lulus seminar dan yudisium PPG, saya berkomitmen untuk: (1) Mengimbaskan praktik baik pembelajaran berdiferensiasi Informatika di forum MGMP; (2) Memperbarui sertifikasi kompetensi industri IT secara berkala; (3) Mengembangkan media ajar digital open-source untuk sekolah vokasi; dan (4) Melakukan Penelitian Tindakan Kelas (PTK) berkelanjutan demi kualitas pendidikan yang adaptif dan inklusif.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KARYA INOVASI PENDIDIKAN (#inovasi) ==================== -->
+  <section class="page-section section-alt" id="inovasi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Karya &amp; Produk Pembelajaran</span>
+        <h2 class="section-title">Karya Inovasi Pendidikan Informatika</h2>
+        <p class="section-desc">
+          Rangkaian artefak inovatif yang dikembangkan untuk memperkaya proses belajar mengajar, mencakup modul ajar terintegrasi, media simulasi, LKPD interaktif, rubrik asesmen, dan video praktik mengajar.
+        </p>
+      </div>
+
+      <!-- Toolbar Mode Tampilan Grid / List -->
+      <div class="inovasi-toolbar">
+        <div style="font-size: 0.92rem; font-weight: 700; color: var(--dark-red);">
+          Koleksi Perangkat &amp; Media Inovasi
+        </div>
+        <div class="view-switcher" role="group" aria-label="Pilihan tampilan inovasi">
+          <button type="button" class="view-btn active" id="view-grid-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            Grid Kartu
+          </button>
+          <button type="button" class="view-btn" id="view-list-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            Daftar Dokumen
+          </button>
+        </div>
+      </div>
+
+      <!-- Container Inovasi (Dirender oleh JS) -->
+      <div id="inovasi-display-container" class="inovasi-grid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ARSIP DOKUMEN TERPUSAT (#arsip) ==================== -->
+  <section class="page-section" id="arsip">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Repositori Terpadu</span>
+        <h2 class="section-title">Arsip Dokumen PDF Terpusat</h2>
+        <p class="section-desc">
+          Pusat pencarian, penyaringan, dan pengunduhan seluruh berkas Lembar Kerja (LK 2), LK 3, dan perangkat portofolio secara instan tanpa perlu memuat ulang halaman.
+        </p>
+      </div>
+
+      <!-- Control Panel Pencarian & Filter -->
+      <div class="archive-controls">
+        <div class="search-bar-wrapper">
+          <svg class="search-icon-inside" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="archive-search-input" class="search-input" placeholder="Ketik kata kunci dokumen (contoh: filosofi, asesmen, kewirausahaan, LK 3)..." aria-label="Cari dokumen PDF">
+        </div>
+
+        <div class="filter-row">
+          <!-- Kategori Pills -->
+          <div class="category-pills" role="tablist" aria-label="Filter Kategori Dokumen">
+            <button type="button" class="cat-pill-btn active" data-cat="all">Semua Kategori</button>
+            <button type="button" class="cat-pill-btn" data-cat="Refleksi Mata Kuliah">Refleksi Mata Kuliah</button>
+            <button type="button" class="cat-pill-btn" data-cat="Refleksi PPL">Refleksi PPL</button>
+            <button type="button" class="cat-pill-btn" data-cat="Refleksi PPG">Refleksi PPG</button>
+          </div>
+
+          <!-- Select Filter & Sort -->
+          <div class="filter-selects">
+            <select id="archive-semester-select" class="custom-select" aria-label="Filter berdasarkan Semester">
+              <option value="all">Semua Semester</option>
+              <option value="Semester 1">Semester 1</option>
+              <option value="Semester 2">Semester 2</option>
+              <option value="Seluruh PPG">Seluruh PPG</option>
+            </select>
+
+            <select id="archive-sort-select" class="custom-select" aria-label="Urutkan Dokumen">
+              <option value="az">Urutkan: Judul (A - Z)</option>
+              <option value="za">Urutkan: Judul (Z - A)</option>
+              <option value="semester">Urutkan: Semester</option>
+            </select>
+
+            <button type="button" id="archive-view-toggle" class="btn btn-outline" style="padding: 7px 14px; font-size: 0.85rem;" aria-label="Ganti mode tabel/kartu">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              Mode Tabel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Status Bar Jumlah Dokumen -->
+      <div class="archive-stats-bar">
+        <span id="archive-count" class="archive-count-badge">Memuat dokumen...</span>
+        <span style="font-size: 0.82rem; color: var(--text-muted);">
+          *Format standar PDF dapat langsung dibaca dan diunduh.
+        </span>
+      </div>
+
+      <!-- Hasil Render Arsip -->
+      <div id="archive-results-container">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Kolom 1: Identitas Portofolio -->
+        <div class="footer-brand">
+          <h4>E-PORTOFOLIO SEMINAR PPG</h4>
+          <p>
+            Portofolio digital resmi mahasiswa Program Pendidikan Profesi Guru (PPG) Calon Guru Bidang Studi Informatika sebagai syarat kelulusan seminar dan refleksi profesionalitas pendidik.
+          </p>
+          <div class="footer-student-box">
+            <strong>Andi Khozin Mubarak</strong> (NIM: 25086085004)<br>
+            Universitas Islam Makassar (UIM) • Tahun Akademik 2025/2026<br>
+            Sekolah Praktik Pengalaman Lapangan (PPL): SMK Telkom Makassar
+          </div>
+        </div>
+
+        <!-- Kolom 2: Navigasi Cepat -->
+        <div class="footer-col">
+          <h5>Tautan Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="#beranda" class="footer-link">&rarr; Beranda Utama</a></li>
+            <li><a href="#profil" class="footer-link">&rarr; Profil &amp; Kompetensi</a></li>
+            <li><a href="#semester1" class="footer-link">&rarr; Refleksi Semester 1</a></li>
+            <li><a href="#semester2" class="footer-link">&rarr; Refleksi Semester 2</a></li>
+            <li><a href="#refleksi-ppg" class="footer-link">&rarr; Refleksi Seluruh PPG</a></li>
+            <li><a href="#inovasi" class="footer-link">&rarr; Karya Inovasi Pendidikan</a></li>
+            <li><a href="#arsip" class="footer-link">&rarr; Repositori Arsip PDF</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Landasan Akademik & Panduan -->
+        <div class="footer-col">
+          <h5>Bantuan &amp; Panduan</h5>
+          <p style="font-size: 0.85rem; color: #D1FAE5; line-height: 1.6; margin-bottom: 14px;">
+            Portofolio ini dibangun menggunakan HTML5 semantik, CSS3 murni berpalet Merah &amp; Hijau, dan JavaScript vanilla agar dapat berjalan offline maupun via Live Server.
+          </p>
+          <button type="button" class="btn btn-outline open-guide-trigger" style="color: #FFFFFF; border-color: #FFFFFF; width: 100%; font-size: 0.85rem;">
+            Petunjuk Pengelolaan Portofolio
+          </button>
+        </div>
+      </div>
+
+      <!-- Copyright Bar Bawah -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Andi Khozin Mubarak • PPG Calon Guru Informatika Universitas Islam Makassar.
+        </div>
+        <div>
+          Tema Akademik Merah &amp; Hijau • Selaras Standar Kemendikbudristek &amp; LPTK UIM
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL PDF VIEWER ==================== -->
+  <div class="modal-overlay" id="pdf-modal" role="dialog" aria-modal="true" aria-labelledby="modal-doc-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <div>
+            <div class="modal-title" id="modal-doc-title">Pratinjau Dokumen PDF</div>
+            <div style="font-size: 0.78rem; color: #FEE2E2;" id="modal-doc-subtitle">PPG Calon Guru Informatika</div>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Pratinjau Dokumen (ESC)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Notifikasi Pemilik -->
+      <div class="modal-notice-banner">
+        <span>Pratinjau Dokumen Portofolio Resmi PPG Calon Guru Informatika.</span>
+        <button type="button" class="open-guide-trigger" style="font-weight: 700; text-decoration: underline; background: none; border: none; color: var(--dark-green); cursor: pointer;">
+          Cara Ganti PDF Asli
+        </button>
+      </div>
+
+      <!-- Iframe Penampil PDF -->
+      <div class="modal-body">
+        <iframe id="pdf-modal-iframe" class="modal-iframe" title="Penampil Dokumen PDF" src="about:blank"></iframe>
+      </div>
+
+      <!-- Footer Modal dengan Tombol Aksi -->
+      <div class="modal-footer">
+        <div class="modal-meta-note">
+          Jika pratinjau browser tidak muncul, silakan tekan "Buka Tab Baru" atau "Unduh PDF".
+        </div>
+        <div class="modal-actions-group">
+          <button type="button" class="btn btn-outline" id="modal-btn-new-tab" style="padding: 7px 14px; font-size: 0.85rem;">
+            Buka di Tab Baru
+          </button>
+          <a href="#" class="btn btn-primary" id="modal-btn-download" style="padding: 7px 16px; font-size: 0.85rem;" download>
+            Unduh Berkas PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL PANDUAN PENGGUNAAN ==================== -->
+  <div class="modal-overlay" id="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guide-title">
+    <div class="modal-dialog guide-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <div class="modal-title" id="guide-title">Panduan Penggunaan &amp; Pembaruan Portofolio</div>
+        </div>
+        <button type="button" class="modal-close-btn" id="guide-close-btn" aria-label="Tutup Panduan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="guide-body">
+        <p style="margin-bottom: 20px; color: var(--text-secondary); font-size: 0.95rem;">
+          Website ini dirancang menggunakan arsitektur web statis murni (HTML5, CSS3, Vanilla JS) sehingga sangat ringan, mudah dipelihara, dan dapat dibuka langsung melalui browser tanpa perlu instalasi server atau dependensi yang rumit.
+        </p>
+
+        <!-- Langkah 1 -->
+        <div class="guide-step-card">
+          <div class="guide-step-header">
+            <span class="guide-step-num">1</span>
+            <h4 class="guide-step-title">Cara Memasukkan Berkas PDF Asli</h4>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Cukup salin (copy-paste) berkas PDF asli tugas LK Anda ke dalam folder <code>assets/documents/</code> dengan nama berkas yang sesuai, contoh:
+          </p>
+          <div class="code-snippet">
+            assets/documents/LK_2_Filosofi_Pendidikan_dan_Pendidikan_Nilai_Andi_Khozin_Mubarak.pdf<br>
+            assets/documents/LK_2_Pemahaman_Peserta_Didik_dan_Pembelajaran_Andi_Khozin_Mubarak.pdf<br>
+            assets/documents/LK2_Refleksi_PPL_Mandiri_Andi_Khozin_Mubarak.pdf<br>
+            assets/documents/LK3_Refleksi_PPG_Andi_Khozin_Mubarak.pdf
+          </div>
+        </div>
+
+        <!-- Langkah 2 -->
+        <div class="guide-step-card">
+          <div class="guide-step-header">
+            <span class="guide-step-num">2</span>
+            <h4 class="guide-step-title">Cara Menambah atau Mengubah Data Dokumen di JavaScript</h4>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Buka berkas <code>js/script.js</code> lalu ubah atau tambahkan objek baru pada array <code>PPG_DOCUMENTS</code>:
+          </p>
+          <div class="code-snippet">
+            {<br>
+            &nbsp;&nbsp;id: "lk2-nama-tugas",<br>
+            &nbsp;&nbsp;title: "LK 2 Judul Tugas Baru",<br>
+            &nbsp;&nbsp;category: "Refleksi Mata Kuliah",<br>
+            &nbsp;&nbsp;semester: "Semester 1",<br>
+            &nbsp;&nbsp;type: "PDF",<br>
+            &nbsp;&nbsp;description: "Deskripsi singkat refleksi...",<br>
+            &nbsp;&nbsp;file: "assets/documents/lk2-nama-tugas.pdf"<br>
+            }
+          </div>
+        </div>
+
+        <!-- Langkah 3 -->
+        <div class="guide-step-card">
+          <div class="guide-step-header">
+            <span class="guide-step-num">3</span>
+            <h4 class="guide-step-title">Cara Mengganti Foto Profil</h4>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Ganti berkas <code>assets/images/profile-placeholder.svg</code> dengan foto formal jas/batik Anda (format <code>.jpg</code>, <code>.png</code>, atau <code>.webp</code>). Sesuaikan atribut <code>src</code> pada tag <code>&lt;img&gt;</code> di <code>index.html</code> jika nama atau ekstensinya berbeda.
+          </p>
+        </div>
+
+        <!-- Langkah 4 -->
+        <div class="guide-step-card">
+          <div class="guide-step-header">
+            <span class="guide-step-num">4</span>
+            <h4 class="guide-step-title">Menjalankan Website dengan Live Server</h4>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Buka folder proyek ini di VS Code, klik kanan pada <code>index.html</code>, lalu pilih <strong>"Open with Live Server"</strong>. Website akan terbuka di <code>http://127.0.0.1:5500</code>.
+          </p>
+        </div>
+
+        <!-- Langkah 5 -->
+        <div class="guide-step-card">
+          <div class="guide-step-header">
+            <span class="guide-step-num">5</span>
+            <h4 class="guide-step-title">Publikasi ke GitHub Pages / Hosting Gratis</h4>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Buat repositori publik di GitHub, unggah seluruh berkas proyek, buka <strong>Settings &rarr; Pages</strong>, lalu pilih branch <code>main</code> / folder <code>/root</code>. Website Anda akan online secara gratis dan dapat diakses dosen penguji kapan saja!
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="justify-content: space-between;">
+        <a href="assets/e-portofolio-ppg.zip" download="e-portofolio-ppg.zip" class="btn btn-green" style="font-size: 0.85rem; padding: 8px 16px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Unduh Seluruh Folder Proyek (ZIP)
+        </a>
+        <button type="button" class="btn btn-primary" onclick="closeGuideModal()">
+          Saya Mengerti
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== FLOATING QUICK BUTTONS ==================== -->
+  <!-- Tombol Melayang Panduan -->
+  <button type="button" class="floating-guide-btn open-guide-trigger" aria-label="Buka Panduan Pemilik">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+      <line x1="12" y1="17" x2="12.01" y2="17"></line>
+    </svg>
+    <span>Panduan Portofolio</span>
+  </button>
+
+  <!-- Tombol Kembali ke Atas (Back to Top) -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Kembali ke Bagian Paling Atas">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

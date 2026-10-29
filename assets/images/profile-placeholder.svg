@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B91C1C"/>
+      <stop offset="100%" stop-color="#7F1D1D"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle with Soft Border -->
+  <circle cx="160" cy="160" r="150" fill="url(#bg-grad)" stroke="#B91C1C" stroke-width="4" stroke-dasharray="8 4"/>
+  <circle cx="160" cy="160" r="142" fill="#FFFFFF" stroke="#15803D" stroke-width="2"/>
+
+  <!-- Subtle Tech Grid Accent Behind Head -->
+  <g opacity="0.12" stroke="#1F2937" stroke-width="1.2">
+    <line x1="80" y1="90" x2="240" y2="90"/>
+    <line x1="80" y1="130" x2="240" y2="130"/>
+    <line x1="120" y1="60" x2="120" y2="180"/>
+    <line x1="160" y1="60" x2="160" y2="180"/>
+    <line x1="200" y1="60" x2="200" y2="180"/>
+  </g>
+
+  <!-- Educator Bust / Silhouette -->
+  <!-- Suit / Shoulders -->
+  <path d="M70 290 C70 230, 110 200, 160 200 C210 200, 250 230, 250 290 Z" fill="#7F1D1D"/>
+  
+  <!-- White Inner Shirt / Collar -->
+  <polygon points="160,200 138,245 160,270 182,245" fill="#FFFFFF"/>
+  <polygon points="160,225 152,280 168,280" fill="#15803D"/> <!-- Green Tie -->
+
+  <!-- Neck -->
+  <rect x="145" y="165" width="30" height="40" rx="6" fill="#FBD38D"/>
+
+  <!-- Head -->
+  <ellipse cx="160" cy="135" rx="42" ry="48" fill="#FBD38D"/>
+
+  <!-- Hair / Professional Cut -->
+  <path d="M118 135 C115 95, 140 75, 160 75 C185 75, 205 95, 202 135 C195 110, 175 102, 160 102 C140 102, 125 112, 118 135 Z" fill="#1F2937"/>
+
+  <!-- Glasses (Informatics Teacher Motif) -->
+  <g stroke="#1F2937" stroke-width="2.5" fill="none">
+    <rect x="133" y="125" width="22" height="15" rx="3" fill="#FFFFFF" fill-opacity="0.4"/>
+    <rect x="165" y="125" width="22" height="15" rx="3" fill="#FFFFFF" fill-opacity="0.4"/>
+    <line x1="155" y1="132" x2="165" y2="132"/>
+    <line x1="122" y1="129" x2="133" y2="130"/>
+    <line x1="187" y1="130" x2="198" y2="129"/>
+  </g>
+
+  <!-- Friendly Smile -->
+  <path d="M150 160 Q160 167 170 160" stroke="#744210" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Graduation Cap / Toga Hat Motif (Top Left Badge) -->
+  <g transform="translate(42, 42)">
+    <circle cx="24" cy="24" r="22" fill="#15803D" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M12 24 L24 17 L36 24 L24 31 Z" fill="#FFFFFF"/>
+    <path d="M17 26.5 L17 32 C17 35, 31 35, 31 32 L31 26.5" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="36" cy="27" r="2" fill="#EF4444"/>
+  </g>
+
+  <!-- Informatics / Code Badge (Top Right Badge) -->
+  <g transform="translate(230, 42)">
+    <circle cx="24" cy="24" r="22" fill="#B91C1C" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="24" y="29" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- Bottom Ribbon / Identity Tag -->
+  <g transform="translate(50, 275)">
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#1F2937" stroke="#22C55E" stroke-width="2"/>
+    <text x="110" y="20" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CALON GURU INFORMATIKA</text>
+  </g>
+</svg>
